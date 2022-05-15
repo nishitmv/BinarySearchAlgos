@@ -10,16 +10,16 @@ public class NumTimesSortedArrRotated {
 
     private int getIndexOfMinElement(int[] arr, int start, int end, int n)
     {
-        if(arr[end]>arr[start])
+        if(arr[end]>arr[start]) // sorted array no rotations
             return 0;
 
-        if(n==1)
+        if(n==1) // size 1 no rotations
             return 0;
 
-        if(arr[end]<arr[start]&& arr[end]<arr[end-1])
+        if(arr[end]<arr[start]&& arr[end]<arr[end-1]) // only 1 rotation at end  ,
             return end;
 
-        if(arr[start]>arr[start+1])
+        if(arr[start]>arr[start+1]) // all rotated except start .
             return 1;
 
         while(start<=end)
