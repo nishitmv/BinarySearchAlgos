@@ -11,11 +11,11 @@ public class RotatedArrayEleFinder {
         if( val == arr[minEle])
             return minEle;
 
-        if(val<arr[end])
+        if(val<=arr[end])
         {
             start = minEle+1;
         }
-        else if( val >arr[start] )
+        else if( val >=arr[start] )
         {
             end = minEle-1;
         }
@@ -49,6 +49,11 @@ public class RotatedArrayEleFinder {
             return 0;
         if(arr[start]<arr[end])
             return 0;
+        if(arr[end]<arr[start]&& arr[end]<arr[end-1]) // only 1 rotation at end  ,
+            return end;
+
+        if(arr[start]>arr[start+1]) // all rotated except start .
+            return 1;
 
         while(start<=end)
         {

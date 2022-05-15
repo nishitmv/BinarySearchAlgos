@@ -5,8 +5,8 @@ import com.nitron.binarysearch.NumberOftimesArrayRotated.NumTimesSortedArrRotate
 public class Main {
 
     public static void main(String[] args) {
-        int[] arr = {12, 14, 15, 17, 1, 3, 5, 6};
-        int val = 14;
+        int[] arr = {5,1,2,3,4};
+        int val = 5;
         System.out.println(new RotatedArrayEleFinder().find(arr, val));
 
     }
