@@ -1,4 +1,4 @@
-package com.nitron.binarysearch.EleCeilFinder;
+package com.nitron.binarysearch.FindCeilOfElement;
 
 public class Main {
 
