@@ -11,15 +11,13 @@ public class NextAlphabetFinder {
         {
             int mid = (start+end)/2;
 
-            if(arr[mid]==val)
-                return arr[mid];
 
-            else if(arr[mid]>val)
+            if(arr[mid]>val)
             {
                 nextChar = arr[mid];
                 end = end -1;
             }
-            else {
+            else  if(arr[mid]<val){
                 start = start+1;
             }
 
